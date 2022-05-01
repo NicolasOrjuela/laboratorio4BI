@@ -1,8 +1,9 @@
 from pydantic import BaseModel
+from typing import List
 
 
 class DataModel(BaseModel):
-# Estas varibles permiten que la librería pydantic haga el parseo entre el Json recibido y el modelo declarado.
+    # Estas varibles permiten que la librería pydantic haga el parseo entre el Json recibido y el modelo declarado.
     life_expectancy: float = None
     adult_mortality: float
     infant_deaths: float
@@ -20,12 +21,16 @@ class DataModel(BaseModel):
     population: float
     thinness_10_19_years: float
     thinness_5_9_years: float
-    income_composition_of_resources	: float
+    income_composition_of_resources: float
     schooling: float
 
-#Esta función retorna los nombres de las columnas correspondientes con el modelo esxportado en joblib.
+    # Esta función retorna los nombres de las columnas correspondientes con el modelo esxportado en joblib.
     def columns(self):
-        return ["Life expectancy", "Adult Mortality", "infant deaths", "Alcohol","percentage expenditure",
+        return ["Life expectancy", "Adult Mortality", "infant deaths", "Alcohol", "percentage expenditure",
                 "Hepatitis B", "Measles", "BMI", "under-five deaths", "Polio", "Total expenditure", "Diphtheria",
                 "HIV/AIDS", "DGP", "Population", "thinness 10-19 years", "thinness 5-9 years",
                 "Income composition of resources", "Schooling"]
+
+
+class DataList(BaseModel):
+    data: List[DataModel]
