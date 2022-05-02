@@ -1,0 +1,21 @@
+        {
+            "life_expectancy": 1000,
+            "adult_mortality": 0,
+            "infant_deaths": 0,
+            "alcohol": 1000,
+            "percentage_expenditure": 10000,
+            "hepatitis_B": 1000,
+            "measles": 1000,
+            "bmi": 1000,
+            "under_five_deaths": 0,
+            "polio": 10000,
+            "total_expenditure": 10000,
+            "diphtheria": 10000,
+            "hiv_aids": 1000,
+            "gdp": 395400.22783,
+            "population": 28873000.0,
+            "thinness_10_19_years": 1000,
+            "thinness_5_9_years": 1300,
+            "income_composition_of_resources": 1762,
+            "schooling": 1420
+        }

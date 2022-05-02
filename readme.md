@@ -19,3 +19,10 @@ python3 -m uvicorn main:app
 
 ## BONO: Modelo Desplegado en HEROKU
 [https://bilab4.herokuapp.com/](https://bilab4.herokuapp.com/)
+
+
+
+
+#### URL del Repositorio:
+
+[https://github.com/NicolasOrjuela/laboratorio4BI](https://github.com/NicolasOrjuela/laboratorio4BI)
